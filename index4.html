@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarim's Store</title>
+   
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(https://wallpapercave.com/wp/wp3146153.jpg);
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+
+header {
+    background-color: #00b894;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #e91e63;
+    border-radius: 5px;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        top: 60px;
+        left: 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+#movies {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.movie-card {
+    background-color: #00b894;
+    border: 1px solid #00b894;
+    border-radius: 5px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    position: relative;
+    top: 100px;
+
+}
+
+.movie-card:hover {
+    transform: scale(1.05);
+}
+
+.movie-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie-card h3 {
+    margin: 15px 0 10px;
+}
+
+.movie-card p {
+    margin-bottom: 15px;
+}
+button {
+    background-color: #e91e63;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #d81b60;
+}
+.img{
+        text-align: center;
+        font-size: 100px;
+        position: relative;
+        color: #00b894;
+        text-shadow: 1px 1px 1px black;
+       top: 60px;
+    }
+    .img2{
+        position: relative;
+        right:550px ;
+        bottom: 100px;
+    }
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Sarim's Store</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="PS5.html">PS5</a></li>
+                <li><a href="moives.html">Moives</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="movies">
+
+        <h2 class="img">SARIM STORE</h2>
+        <img class="img2" src="img.png" >
+        
+        <div class="movie-container">
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/719jVfzuf+L._AC_UY218_.jpg" alt="Movie Title 1">
+                <h3>VILLAGE</h3>
+                <p>"Game Village" is an exciting destination for gamers</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/712XPl7+qKL._AC_UY218_.jpg" alt="Movie Title 2">
+                <h3>RESIDENT EVIL 4</h3>
+                <p>"Resident Evil 4" is a groundbreaking survival horror game </p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/81hbg+4-NCL._AC_UY218_.jpg" alt="Movie Title 3">
+                <h3>2K25</h3>
+                <p>"2K25" delivers an authentic basketball experience, combining stunning visuals=.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/71CVPn65SXL._AC_UL320_.jpg" alt="Movie Title 4">
+                <h3>MARVEL The Avengers</h3>
+                <p>"Marvel's Avengers" is an action-adventure game that lets players .</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/61FQwX+9G2L._AC_UL320_.jpg" alt="Movie Title 5">
+                <h3>ELEX 2</h3>
+                <p>ELEX 2" is an open-world RPG that blends science fiction and fantasy,</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/81ulw71IHUL._AC_UL320_.jpg" alt="Movie Title 6">
+                <h3>MX ATV LEGENDS</h3>
+                <p>"MX ATV Legends" is an adrenaline-pumping off-road racing game .</p>
+                <button>Buy Now</button>
+
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/71E3B-85r1L._AC_UL320_.jpg" alt="Movie Title 6">
+                <h3>SILENT HILL 2</h3>
+                <p>"Silent Hill 2" is a psychological horror masterpiece that immerses players in a haunting narrative</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/61LyJxQ7y5L._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>JEDI SURVIVOR</h3>
+                <p>"Star Wars Jedi: Survivor" is an action-adventure game that continues the story of Cal Kestis</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/7191h0o3I1L._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>BLACK MYTH WUKONG</h3>
+                <p>"Black Myth: Wukong" is an action RPG inspired by Chinese mythology,</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/81sMOwRhhNL._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>THE OREGON</h3>
+                <p>"The Oregon" is an immersive survival adventure game that challenges players to navigate</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/81Q+mNuGfML._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>SONIC FRONTIRES</h3>
+                <p>"Sonic Frontiers" is an open-world platformer that takes Sonic on a thrilling adventure.</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/71tBR2J+ZrL._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>ASSASSINS MIRAGE</h3>
+                <p>"Assassin's Creed Mirage" returns to the series' roots, offering players a richly </p>
+                <button>Buy Now</button>
+                
+
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/71k+GZCkioL._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>SIRAY</h3>
+                <p>"Siray" is an engaging adventure game that immerses players</p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/81h2WhI4dtL._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>Fast Food Nation</h3>
+                <p>"Fast Food Nation" is a strategy simulation game </p>
+                <button>Buy Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="https://m.media-amazon.com/images/I/81-h+mjH27L._AC_UY218_.jpg" alt="Movie Title 6">
+                <h3>ELDEN RING</h3>
+                <p>"Elden Ring" is an expansive action RPG that offers a vast open world </p>
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+</html>
